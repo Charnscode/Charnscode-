@@ -1,7 +1,7 @@
 let currentQuestion = 0;
 let score = 0;
 let timer;
-let timeLeft = 60;
+let timeLeft = 40;
 
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
@@ -24,7 +24,7 @@ function showQuestion() {
     btn.textContent = answer;
     btn.addEventListener("click", () => selectAnswer(index));
     answersEl.appendChild(btn);
-  });
+11  });
   startTimer();
 }
 
@@ -32,7 +32,7 @@ function resetState() {
   clearInterval(timer);
   nextBtn.style.display = "none";
   answersEl.innerHTML = "";
-  timeLeft = 60;
+  timeLeft = 40;
   timerEl.textContent = timeLeft;
 }
 
