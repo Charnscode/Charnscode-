@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inscription Quiz HTML/CSS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Inscription au Quiz HTML/CSS</h1>
+    <form id="signupForm">
+      <label for="name">Nom complet :</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="whatsapp">Numéro WhatsApp :</label>
+      <input type="tel" id="whatsapp" name="whatsapp" required />
+
+    <button onclick="window.location.href='index.html'">Commencer le quiz</button>
+    </form>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+<footer>CHARNS CODE </footer>
+</html>
